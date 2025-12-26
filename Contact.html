@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Global.css">
+    <link rel="stylesheet" href="Styles/Contact.css">
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h3>Contacto</h3>
+        
+        <nav>
+            <input type="checkbox" id="checkbox">
+            <label class="checkbtn" for="checkbox">
+                <i class='bx bx-menu'></i>
+            </label>
+            <ul>
+                <li><a href="About_me.html">Sobre mí</a></li>
+                <li><a href="Projects.html">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <div>
+                <label class="label" for="main-form-input-name">Nombre completo</label>
+                <input class="input" id="main-form-input-name" type="text" name="name" placeholder="Ejemplo: Juan Pérez" required>
+            </div>
+            
+            <div>
+                <label class="label" for="main-form-input-email">Correo electrónico</label>
+                <input class="input" id="main-form-input-email" type="email" name="email" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div>
+                <label class="label" for="main-form-input-phone">Teléfono (opcional)</label>
+                <input class="input" id="main-form-input-phone" type="tel" name="phone" placeholder="+506 8888-8888">
+            </div>
+
+            <div>
+                <label class="label" for="main-form-input-message">Mensaje</label>
+                <textarea class="input" id="main-form-input-message" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            
+            <div>
+                <button id="main-form-send-button" type="submit">Enviar</button>
+                <button id="main-form-cancel-button" type="button">Cancelar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h5>Mi Primera Página Web | 2025</h5>
+    </footer>
+</body>
+</html>

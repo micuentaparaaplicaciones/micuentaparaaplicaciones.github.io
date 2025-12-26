@@ -1,0 +1,80 @@
+#############################
+#   SISTEMA OPERATIVO      #
+#############################
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+#############################
+#     EDITORES / IDEs       #
+#############################
+
+# VS Code
+.vscode/
+
+# WebStorm / IntelliJ
+.idea/
+
+# Otros
+*.swp
+*.swo
+
+#############################
+#    DEPENDENCIAS WEB       #
+#############################
+
+# Node.js
+node_modules/
+
+# pnpm
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Yarn
+yarn-debug.log*
+yarn-error.log*
+
+# npm
+npm-debug.log*
+
+#############################
+#   HERRAMIENTAS DE BUILD   #
+#############################
+
+# Output de build (Vite, React, Vue, Angular, etc.)
+dist/
+build/
+out/
+
+# Bundlers
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.svelte-kit/
+
+#############################
+#      ARCHIVOS TEMP        #
+#############################
+
+*.tmp
+*.temp
+*.log
+*.bak
+
+#############################
+#         OTROS             #
+#############################
+
+# Archivos de producción opcionales
+*.map
+
+# En caso de usar env vars
+.env
+.env.*.local
+
