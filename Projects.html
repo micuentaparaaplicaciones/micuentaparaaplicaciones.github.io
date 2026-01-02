@@ -1,41 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/Global.css">
     <link rel="stylesheet" href="Styles/Projects.css">
-    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <title>Figura</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Proyectos</title>
 </head>
 <body>
     <header>
-        <h3>Proyectos</h3>
+        <h1>Proyectos</h1>
         
         <nav>
             <input type="checkbox" id="checkbox">
-            <label class="checkbtn" for="checkbox">
+            <label class="checkbtn" for="checkbox" aria-label="Abrir menú de navegación">
                 <i class='bx bx-menu'></i>
             </label>
             <ul>
                 <li><a href="About_me.html">Sobre mí</a></li>
+                <li><a href="Resume.html">Currículo</a></li>
                 <li><a href="Contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="square-black">
-            <div class="rectangle">
-                <div class="square-blue"></div>
-                <div class="square-green"></div>
-            </div>
-            <div class="rectangle">
-                <div class="rectangle-yellow"></div>
+        <div class="row">
+            <video class="video" controls preload="metadata">
+                <source src="Videos/Video Demo SGO.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+
+            <div class="description">
+                <h2>Sistema de Gestión de Órdenes</h2>
+                
+                <p>
+                    Aplicación full stack desarrollada para optimizar la eficiencia operativa en la gestión de órdenes. 
+                    Se implementó una API RESTful con C#, ASP.NET Core y Entity Framework Core bajo una arquitectura en capas, 
+                    integrada con Oracle Database para la persistencia de datos transaccionales. 
+                    Se creó además una aplicación móvil multiplataforma con Flutter (Dart) que consumía estos servicios. 
+                    Se aplicaron principios SOLID, prácticas de Clean Code y pruebas automatizadas para garantizar 
+                    mantenibilidad y calidad del software.
+                </p>
             </div>
         </div>
     </main>
     <footer>
-        <h5>Mi Primera Página Web | 2025</h5>
+        <p>© 2025 Rudy Salas Víquez</p>
+        <p>
+            <i class="bx bx-envelope" aria-hidden="true"></i>
+            <a href="mailto:salasrudy@hotmail.com">salasrudy@hotmail.com</a> |
+            
+            <i class="bx bx-phone" aria-hidden="true"></i>
+            <a href="tel:+50670853640">+506 7085-3640</a> |
+            
+            <i class="bx bxl-github" aria-hidden="true"></i>
+            <a href="https://github.com/micuentaparaaplicaciones"
+            target="_blank"
+            rel="noopener">
+                github.com/micuentaparaaplicaciones
+            </a> |
+            
+            <i class="bx bxl-linkedin" aria-hidden="true"></i>
+            <a href="https://www.linkedin.com/in/salasrudy"
+            target="_blank"
+            rel="noopener">
+                linkedin.com/in/salasrudy
+            </a>
+        </p>
     </footer>
 </body>
 </html>

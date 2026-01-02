@@ -7,9 +7,56 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+}
+
+header, footer {
+    padding: 1rem;
+    height: 100px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+footer {
+    border-top: 1px solid black;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-weight: normal;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.85em;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer i {
+    margin-right: 0.25rem;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 3em;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 #checkbox{
@@ -26,60 +73,36 @@ nav ul {
     gap: 1rem;
 }
 
-nav ul li {
-    font-weight: bold;
-}
-
 nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
-}
-
-h1, h3, p {
-    color: white;
-} 
-
-header, footer {
-    border: 1px solid white;
-    padding: 1rem;
-    height: 100px;
-    background-color: rgb(10, 25, 80);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer {
-    justify-content: center;
-}
-
-main {
-    padding: 1rem;
-    border: 1px solid white;
-    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("../Images/background.jpg");
-    background-size: cover;
-    flex: 1; 
-    display: flex;  
-    flex-direction: column;     
-    justify-content: center;    
-    align-items: center; 
-    gap: 2rem;
 }
 
 /* Responsive */
 @media(max-width: 767px) {
+    header, footer {
+        padding: 0.75rem;
+        gap: 1rem;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    footer p {
+        font-size: 0.75em;
+    }
+
     .checkbtn{
         display: block;
-        color: white;
+        color: black;
         font-size: 2rem;
     }
 
     nav ul {
-        border: 1px solid white;
+        border: 1px solid black;
         padding: 1rem;
-        height: calc(100vh - 200px);
-        background-color: rgb(10, 25, 80);
+        background-color: white;
         position: fixed;
         top: 100px;
         right: -100%;
@@ -88,6 +111,7 @@ main {
         gap: 0.5rem;
         text-align: center;
         transition: 0.5s;
+        /* z-index: 1000; */
     }
 
     #checkbox:checked ~ ul{
