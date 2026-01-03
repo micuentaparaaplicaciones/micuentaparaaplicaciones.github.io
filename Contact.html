@@ -25,7 +25,7 @@
         </nav>
     </header>
     <main>
-        <form action="">
+        <form action="https://formspree.io/f/mzdzvzkk" method="POST">
             <div>
                 <label class="label" for="main-form-input-name">Nombre completo</label>
                 <input class="input" id="main-form-input-name" type="text" name="name" placeholder="Ejemplo: Juan Pérez" required>
@@ -46,6 +46,9 @@
                 <textarea class="input" id="main-form-input-message" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
             </div>
             
+            <!-- Protección básica contra bots (HONEYPOT) -->
+            <input type="text" name="_gotcha" style="display:none">
+
             <div>
                 <button id="main-form-send-button" type="submit">Enviar</button>
                 <!-- <button id="main-form-cancel-button" type="button">Cancelar</button> -->
