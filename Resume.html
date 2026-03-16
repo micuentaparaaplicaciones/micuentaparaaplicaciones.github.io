@@ -1,115 +1,169 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/Global.css">
     <link rel="stylesheet" href="Styles/Resume.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <title>Currículo</title>
+    <title>Resume</title>
 </head>
 <body>
     <header>
-        <h1>Currículo</h1>
+        <h1>Resume</h1>
         
          <a href="Documents/Rudy_Salas_Viquez_CV_EN.zip" download class="download-btn" aria-label="Descargar Currículo"> 
             <i class='bx  bxs-arrow-to-bottom'></i>
         </a> 
 
         <nav>
-            <input type="checkbox" id="checkbox">
-            <label class="checkbtn" for="checkbox" aria-label="Abrir menú de navegación">
+            <input type="checkbox" id="checkbox" aria-hidden="true">
+            <label class="checkbtn" for="checkbox" aria-label="Open navigation menu">
                 <i class='bx bx-menu'></i>
             </label>
             <ul>
-                <li><a href="About_me.html">Sobre mí</a></li>
-                <li><a href="Projects.html">Proyectos</a></li>
-                <li><a href="Contact.html">Contacto</a></li>
+                <li><a href="About_me.html">About me</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="row">
-            <div class="column-left">
+            <div class="column-one">
                 <div>
-                    <h2>Resumen Profesional</h2>
+                    <h2>Summary</h2>
 
                     <p> 
-                        Ingeniero en Informática con experiencia en desarrollo full-stack 
-                        utilizando C# y tecnologías .NET. Experiencia en creación de APIs RESTful, 
-                        desarrollo móvil con .NET MAUI y Flutter, e integración de bases de datos Oracle y SQL. 
-                        Enfoque en principios SOLID, Clean Code, metodologías Agile/Scrum 
-                        para crear software mantenible y de calidad.
+                        Software Engineer specializing in backend and full-stack development with experience building RESTful APIs, cross-platform 
+                        mobile applications, database design, distributed cloud systems, and scalable web solutions. Proven ability to design and 
+                        deliver high-performance systems using modern frameworks and cloud platforms. Proficient in layered architecture, SOLID 
+                        principles, Clean Code practices, and unit testing, with familiarity in Agile/Scrum environments and a strong focus on building 
+                        scalable, maintainable, and well-structured software solutions. 
                     </p>
                 </div>
 
                 <div>
-                    <h2>Experiencia</h2>
+                    <h2>Experience</h2>
                     
+                    <div>
+                        <h4>NAVASOFT (Industry: Software Development & IT Services)</h4>
+
+                        <div class="job-header">
+                            <span class="job-title">Junior Developer</span>
+                            <span class="job-date">Jan 2025 - Dec 2025</span>
+                        </div>
+                        
+                        <ul>
+                            <li>Built and deployed a full-stack route sales management system improving order tracking and operational efficiency.</li>
+                            <li>Implemented backend services and a cross-platform mobile application supporting order management and route operations.</li>
+                            <li>Integrated relational databases and configured deployment on IIS for validation and testing.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Cloud & Distributed Systems</h2>
+
                     <ul>
-                        <li>Oracle - Coordinador de Servicios</li>
-                        <li>Teleperformance - Soporte Técnico</li>
-                        <li>Hewlett-Packard - Servicio al Cliente - Soporte Técnico</li>
-                        <li>Qualfon - Washington Mutual Bank - Agente de Cobranza</li>
-                        <li>COOPESA - Práctica de Graduación en Aviónica</li>
+                        <li><a href="Portfolio.html#azure">Microsoft Azure Implementation</a></li>
+                        <li><a href="Portfolio.html#gcp">Google Cloud Platform Implementation</a></li>
+                        <li><a href="Portfolio.html#aws">Amazon Web Services Implementation</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h2>Educación</h2>
-                    
+                    <h2>Projects</h2>
+
                     <ul>
-                        <li>Bachillerato en Ingeniería Informática (UNED)</li>
-                        <li>Técnico en Mantenimiento Aeronáutico (IFA)</li>
+                        <li><a href="Portfolio.html#order-management-system">Order Management System - Full Stack Application</a></li>
+                        <li><a href="Portfolio.html#online-auction-platform">Online Auction Platform - Web Application</a></li>
+                        <li><a href="Portfolio.html#stock-management-system">Stock Management System - Web Application</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="column-right">
+            <div class="column-two">
                 <div>
-                    <h2>Habilidades Técnicas</h2>
+                    <h2>Skills</h2>
                     
                     <ul>
-                        <li>Lenguajes: C#, Dart, Java, JavaScript, Python</li>
-                        <li>Frameworks y Plataformas: .NET, ASP.NET Core, Entity Framework Core, LINQ, Flutter, .NET MAUI</li>
-                        <li>Web y APIs: APIs RESTful, HTML, CSS, Django</li>
-                        <li>Bases de Datos: Oracle, SQL</li>
-                        <li>Prácticas y Metodologías: Principios SOLID, Clean Code, Agile/Scrum, Revisiones de Código, Pruebas Unitarias (xUnit)</li>
-                        <li>Herramientas y Control de Versiones: Git, GitHub</li>
+                        <li> <strong>Languages:</strong> C# · JavaScript · Python · Java · Dart · SQL</li>
+                        <li> <strong>Frameworks & Platforms:</strong> ASP.NET Core · .NET · Entity Framework Core · Node.js · Express.js · Django · Flutter · .NET MAUI</li>
+                        <li> <strong>Cloud & Infrastructure:</strong> Microsoft Azure (App Service, Service Bus, WebJobs) · Google Cloud Platform (Cloud Run, Pub/Sub, Cloud Functions) · AWS (Lambda, SNS, SQS, RDS)</li>
+                        <li> <strong>Web:</strong> HTML · CSS · Responsive Design</li>
+                        <li> <strong>Architecture:</strong> RESTful APIs · Event-Driven Systems · Asynchronous Messaging · Distributed Systems</li>
+                        <li> <strong>Databases:</strong> SQL Server · Oracle · MySQL · MongoDB</li>
+                        <li> <strong>Practices & Methodologies:</strong>  SOLID · Clean Code · Agile/Scrum · Code Reviews · Unit Testing (xUnit)</li>
+                        <li> <strong>Tools:</strong> Git · GitHub · Postman · Swagger</li>
                     </ul>
                 </div>
 
                 <div>
-                    <h2>Certificaciones</h2>
+                    <h2>Certifications</h2>
                     
+                    <div>
+                        <h4>Cloud</h4>
+
+                        <ul>
+                            <li>Cloud Computing Specialist Certified - Global Cert Academy, 2026</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Backend & Web</h4>
+
+                        <ul>
+                            <li>Modern Web Design and Development: HTML, CSS, JavaScript - CPIC, 2025</li>
+                            <li>Web Development with Servers and APIs: Backend in Action - CPIC, 2026</li>
+                            <li>Web Application Security Hardening with ASP.NET Core C# - CPIC, 2025</li>
+                        </ul>
+                    </div>
+
+                     <div>
+                        <h4>Mobile Development</h4>
+
+                        <ul>
+                            <li>.NET MAUI Starter: Mobile Development Fundamentals - CPIC, 2025</li>
+                            <li>.NET MAUI Builder: Scalable Mobile Solutions - CPIC, 2026</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Education</h2>
+                    
+                    <h4>Universidad Estatal a Distancia (UNED) - Costa Rica</h4>
+
                     <ul>
-                        <li>Diseño y Desarrollo Web Moderno HTML, CSS y JavaScript (CPIC)</li>
-                        <!-- <li>Desarrollo Web con Servidores y APIs Backend en Acción (CPIC)</li> -->
-                        <li>Blindaje de Aplicaciones Web con ASP.NET Core C# (CPIC)</li>
-                        <!-- <li>Blindaje de Aplicaciones Web Intermedio OWASP y Arquitectura Segura (CPIC)</li> -->
-                        <li>.NET MAUI Starter Domina las Bases del desarrollo móvil (CPIC)</li>
-                        <!-- <li>.NET MAUI Builder Soluciones Móviles Escalables (CPIC)</li> -->
+                        <li>Bachelor’s Degree in Computer Science (2020 - 2025)</li>
+                    </ul>
+
+                    <h4>Instituto de Formación Aeronáutica (IFA) - Costa Rica</h4>
+
+                    <ul>
+                        <li>Aeronautical Maintenance Technician (2003 - 2005)</li>
                     </ul>
                 </div>
 
                 <div>
-                    <h2>Idiomas</h2>
+                    <h2>Languages</h2>
                     
                     <ul>
-                        <li>Español - Nativo</li>
-                        <li>Inglés - Intermedio B2 (CCCN)</li>
+                        <li><strong>Spanish:</strong> Native</li>
+                        <li><strong>English:</strong> B2 (Centro Cultural Costarricense Norteamericano)</li>
                     </ul>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <p>© 2025 Rudy Salas Víquez</p>
+        <p>© 2026 Rudy Salas Víquez</p>
         <p>
-            <i class="bx bx-envelope" aria-hidden="true"></i>
+            <i class="bx bxs-envelope" aria-hidden="true"></i>
             <a href="mailto:salasrudy@hotmail.com">salasrudy@hotmail.com</a> |
             
-            <i class="bx bx-phone" aria-hidden="true"></i>
+            <i class="bx bxs-phone" aria-hidden="true"></i>
             <a href="tel:+50670853640">+506 7085-3640</a> |
             
             <i class="bx bxl-github" aria-hidden="true"></i>

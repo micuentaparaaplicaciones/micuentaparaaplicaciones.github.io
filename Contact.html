@@ -1,67 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/Global.css">
     <link rel="stylesheet" href="Styles/Contact.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <title>Contacto</title>
+    <title>Contact</title>
 </head>
 <body>
     <header>
-        <h1>Contacto</h1>
+        <h1>Contact</h1>
 
         <nav>
-            <input type="checkbox" id="checkbox">
-            <label class="checkbtn" for="checkbox" aria-label="Abrir menú de navegación">
+            <input type="checkbox" id="checkbox" aria-hidden="true">
+            <label class="checkbtn" for="checkbox" aria-label="Open navigation menu">
                 <i class='bx bx-menu'></i>
             </label>
             <ul>
-                <li><a href="About_me.html">Sobre mí</a></li>
-                <li><a href="Resume.html">Currículo</a></li>
-                <li><a href="Projects.html">Proyectos</a></li>
+                <li><a href="About_me.html">About me</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <form action="https://formspree.io/f/mzdzvzkk" method="POST">
             <div>
-                <label class="label" for="main-form-input-name">Nombre completo</label>
-                <input class="input" id="main-form-input-name" type="text" name="name" placeholder="Ejemplo: Juan Pérez" required>
+                <label class="label" for="main-form-input-name">Full name</label>
+                <input class="input" id="main-form-input-name" type="text" name="name" placeholder="Example: Juan Pérez" required>
             </div>
             
             <div>
-                <label class="label" for="main-form-input-email">Correo electrónico</label>
-                <input class="input" id="main-form-input-email" type="email" name="email" placeholder="ejemplo@correo.com" required>
+                <label class="label" for="main-form-input-email">Email</label>
+                <input class="input" id="main-form-input-email" type="email" name="email" placeholder="example@email.com" required>
             </div>
 
             <div>
-                <label class="label" for="main-form-input-phone">Teléfono (opcional)</label>
+                <label class="label" for="main-form-input-phone">Phone (optional)</label>
                 <input class="input" id="main-form-input-phone" type="tel" name="phone" placeholder="+506 8888-8888">
             </div>
 
             <div>
-                <label class="label" for="main-form-input-message">Mensaje</label>
-                <textarea class="input" id="main-form-input-message" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <label class="label" for="main-form-input-message">Message</label>
+                <textarea class="input" id="main-form-input-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
             </div>
             
             <!-- Protección básica contra bots (HONEYPOT) -->
             <input type="text" name="_gotcha" style="display:none">
 
             <div>
-                <button id="main-form-send-button" type="submit">Enviar</button>
-                <!-- <button id="main-form-cancel-button" type="button">Cancelar</button> -->
+                <button id="main-form-send-button" type="submit">Send</button>
+                <!-- <button id="main-form-cancel-button" type="button">Cancel</button> -->
             </div>
         </form>
     </main>
     <footer>
-        <p>© 2025 Rudy Salas Víquez</p>
+        <p>© 2026 Rudy Salas Víquez</p>
         <p>
-            <i class="bx bx-envelope" aria-hidden="true"></i>
+            <i class="bx bxs-envelope" aria-hidden="true"></i>
             <a href="mailto:salasrudy@hotmail.com">salasrudy@hotmail.com</a> |
             
-            <i class="bx bx-phone" aria-hidden="true"></i>
+            <i class="bx bxs-phone" aria-hidden="true"></i>
             <a href="tel:+50670853640">+506 7085-3640</a> |
             
             <i class="bx bxl-github" aria-hidden="true"></i>

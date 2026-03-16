@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Global.css">
+    <link rel="stylesheet" href="Styles/Portfolio.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        
+        <nav>
+            <input type="checkbox" id="checkbox" aria-hidden="true">
+            <label class="checkbtn" for="checkbox" aria-label="Open navigation menu">
+                <i class='bx bx-menu'></i>
+            </label>
+            <ul>
+                <li><a href="About_me.html">About me</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="column">
+            <h2 id="cloud-systems-title">Cloud & Distributed Systems</h2>
+
+            <div class="section">
+                <h3 id="azure">Microsoft Azure</h3>
+
+                <h4>Tech: C# · ASP.NET Core · RESTful API · Azure App Service · Azure Service Bus · Azure SQL</h4>
+                
+                <ul>
+                    <li>Deployed RESTful APIs using C# on Azure App Service.</li>
+                    <li>Implemented asynchronous messaging with Azure Service Bus and 
+                        background processing using WebJobs with Azure SQL Database.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3 id="gcp">Google Cloud Platform</h3>
+                
+                <h4>Tech: C# · ASP.NET Core · RESTful API · Google Cloud Run · Google Pub/Sub · Cloud SQL</h4>
+
+                <ul>
+                    <li>Deployed RESTful APIs using Cloud Run.</li>
+                    <li>Implemented event-driven messaging with Pub/Sub and 
+                        Cloud Functions with persistence in Cloud SQL.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3 id="aws">Amazon Web Services</h3>
+                
+                <h4>Tech: C# · ASP.NET Core · RESTful API · AWS Lambda · Amazon SNS / SQS · Amazon RDS</h4>
+
+                <ul>
+                    <li>Deployed REST API services using AWS Lambda.</li>
+                    <li>Implemented asynchronous messaging with Amazon SNS/SQS and 
+                        serverless functions to process queues and persist data in Amazon RDS.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Architecture</h3>
+                
+                <ul>
+                    <li>Implemented an event-driven backend architecture integrating REST APIs, 
+                        asynchronous messaging, serverless functions, and relational databases.</li>
+                </ul>
+            </div>
+
+            <h2 id="projects-title">Projects</h2>
+
+            <div class="row">
+                <div class="column-one">
+                    <video controls preload="metadata">
+                        <source src="Videos/Video Demo SGO.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                </div>
+
+                <div class="column-two">
+                    <div class="description">
+                        <h3 id="order-management-system">Order Management System - Full Stack Application</h3>
+                        
+                        <h4>Tech: ASP.NET Core · Entity Framework Core · Flutter · Oracle Database</h4>
+                        
+                        <ul>
+                            <li>Developed a full-stack order management system supporting operational workflows.</li>
+                            <li>Designed RESTful APIs using ASP.NET Core with layered architecture and 
+                                relational data persistence.</li>
+                            <li>Built a cross-platform mobile application in Flutter, 
+                                enabling real-time integration with backend services.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column-one">
+                    <img src="Images/auction-image.jpg">
+                </div>
+
+                <div class="column-two">
+                    <div class="description"> 
+                        <h3 id="online-auction-platform">Online Auction Platform - Web Application</h3>
+                        
+                        <h4>Tech: Python · Django · JavaScript · SQLite · HTML · CSS</h4>
+                        
+                        <ul>
+                            <li>Engineered an auction platform using Django following the MVT architecture.</li>
+                            <li>Designed relational data models for listings, bids, comments, 
+                                categories, and user watchlists.</li>
+                            <li>Implemented authentication, auction listings, bidding with validation, 
+                                watchlists, and auction closing logic.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column-one">
+                    <img src="Images/stock-management-image.jpg">
+                </div>
+
+                <div class="column-two">
+                    <div class="description"> 
+                        <h3 id="stock-management-system">Stock Management System - Web Application</h3>
+                        
+                        <h4>Tech: Node.js · Express.js · MongoDB · Mongoose · JavaScript · HTML · CSS</h4>
+                        
+                        <ul>
+                            <li>Created a stock management system using Node.js and Express.js with RESTful API architecture.</li>
+                            <li>Designed MongoDB data models using Mongoose and implemented full CRUD operations with 
+                                validation and structured API responses.</li>
+                            <li>Prevented race conditions during product creation by designing an atomic MongoDB counter, 
+                                ensuring data integrity across concurrent operations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2026 Rudy Salas Víquez</p>
+        <p>
+            <i class="bx bxs-envelope" aria-hidden="true"></i>
+            <a href="mailto:salasrudy@hotmail.com">salasrudy@hotmail.com</a> |
+            
+            <i class="bx bxs-phone" aria-hidden="true"></i>
+            <a href="tel:+50670853640">+506 7085-3640</a> |
+            
+            <i class="bx bxl-github" aria-hidden="true"></i>
+            <a href="https://github.com/micuentaparaaplicaciones"
+            target="_blank"
+            rel="noopener">
+                github.com/micuentaparaaplicaciones
+            </a> |
+            
+            <i class="bx bxl-linkedin" aria-hidden="true"></i>
+            <a href="https://www.linkedin.com/in/salasrudy"
+            target="_blank"
+            rel="noopener">
+                linkedin.com/in/salasrudy
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
