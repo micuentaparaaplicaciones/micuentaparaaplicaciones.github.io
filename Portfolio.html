@@ -26,67 +26,221 @@
     </header>
     <main>
         <div class="column">
-            <h2 id="cloud-systems-title">Cloud & Distributed Systems</h2>
+            <h1>Projects</h1>
 
-            <div class="section">
-                <h3 id="azure">Microsoft Azure</h3>
+            <div class="row">
+                <div class="column-one">
+                    <img src="Images/mulit-cloud-architecture.jpg">
+                </div>
 
-                <h4>Tech: C# · ASP.NET Core · RESTful API · Azure App Service · Azure Service Bus · Azure SQL</h4>
-                
-                <ul>
-                    <li>Deployed RESTful APIs using C# on Azure App Service.</li>
-                    <li>Implemented asynchronous messaging with Azure Service Bus and 
-                        background processing using WebJobs with Azure SQL Database.</li>
-                </ul>
+                <div class="column-two">
+                    <h2 id="mulit-cloud-architecture">Distributed Event-Driven System - Multi-Cloud (Training Project)</h2>
+
+                    <div class="technical-description">
+                        <h3>Technical Description</h3>
+
+                        <h4>C# · ASP.NET Core · RESTful APIs · Event-Driven Architecture · Azure · GCP · AWS</h4>
+                        
+                        <ul>
+                            <li>Designed and implemented a multi-cloud event-driven architecture integrating RESTful APIs, 
+                                message brokers, serverless compute, and relational databases.</li>
+
+                            <li>Built and deployed RESTful APIs in C# (ASP.NET Core) to expose endpoints for data ingestion 
+                                and service orchestration across:
+                            
+                                <ul>
+                                    <li>Azure App Service</li>
+                                    <li>Google Cloud Run</li>
+                                    <li>AWS Lambda</li>
+                                </ul>
+                            </li>
+
+                            <li>Implemented asynchronous messaging patterns to enable decoupled communication 
+                                and reliable event processing using:
+                            
+                                <ul>
+                                    <li>Azure Service Bus</li>
+                                    <li>Google Pub/Sub</li>
+                                    <li>Amazon SNS/SQS</li>
+                                </ul>
+                            </li>
+
+                            <li>Developed background workers / serverless functions to:
+                            
+                                <ul>
+                                    <li>Consume queue messages</li>
+                                    <li>Execute business logic</li>
+                                    <li>Persist data in:
+
+                                        <ul>
+                                            <li>Azure SQL</li>
+                                            <li>Cloud SQL</li>
+                                            <li>Amazon RDS</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>Validated API endpoints and end-to-end message workflows using Postman and Swagger.</li>
+
+                            <li>Architecture:
+
+                                <ul>
+                                    <li>Client → REST API → Message Queue → Worker/Function → Database</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-            <div class="section">
-                <h3 id="gcp">Google Cloud Platform</h3>
-                
-                <h4>Tech: C# · ASP.NET Core · RESTful API · Google Cloud Run · Google Pub/Sub · Cloud SQL</h4>
+            <div class="row">
+                <div class="column-one">
+                    <img src="Images/product-list.JPG">
+                </div>
 
-                <ul>
-                    <li>Deployed RESTful APIs using Cloud Run.</li>
-                    <li>Implemented event-driven messaging with Pub/Sub and 
-                        Cloud Functions with persistence in Cloud SQL.</li>
-                </ul>
+                <div class="column-two">
+                    <h2 id="stock-management-system">Stock Management System - Full Stack Web Application</h2>
+
+                    <div class="technical-description">
+                        <h3>Technical Description</h3>
+
+                        <h4>Tech: Node.js · Express.js · MongoDB · Mongoose · JavaScript · HTML · CSS</h4>
+                        
+                        <ul>
+                            <li>Created a stock management system using Node.js and Express.js with RESTful API architecture.</li>
+                            <li>Designed MongoDB data models using Mongoose and implemented full CRUD operations with 
+                                validation and structured API responses.</li>
+                            <li>Prevented race conditions during product creation by designing an atomic MongoDB counter, 
+                                ensuring data integrity across concurrent operations.</li>
+                        </ul>
+                    </div>
+
+                    <div class="functional-description">
+                        <h3>How It Works</h3>
+
+                        <p>
+                            A web application that helps small businesses efficiently track inventory, update product details, 
+                            and prevent stockouts. Users can list products, set prices, monitor available quantities, 
+                            and perform quick actions like adding, editing, or removing items—all in one place.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="section">
-                <h3 id="aws">Amazon Web Services</h3>
-                
-                <h4>Tech: C# · ASP.NET Core · RESTful API · AWS Lambda · Amazon SNS / SQS · Amazon RDS</h4>
+            <div class="row">
+                <div class="column-one">
+                    <img src="Images/all-posts.JPG">
+                </div>
 
-                <ul>
-                    <li>Deployed REST API services using AWS Lambda.</li>
-                    <li>Implemented asynchronous messaging with Amazon SNS/SQS and 
-                        serverless functions to process queues and persist data in Amazon RDS.</li>
-                </ul>
+                <div class="column-two">
+                    <h2 id="social-network-system">Social Network System - Full Stack Web Application</h2>
+
+                    <div class="technical-description">
+                        <h3>Technical Description</h3>
+
+                        <h4>Tech: Python · Django · JavaScript · SQLite · HTML · CSS</h4>
+                        
+                        <ul>
+                            <li>Engineered a social network application using Django following the MVT architecture.</li>
+                            <li>Designed relational data models for posts, user relationships, and likes.</li>
+                            <li>Implemented authentication, asynchronous interactions (follow/unfollow, like/unlike), and paginated feeds.</li>
+                        </ul>
+                    </div>
+
+                    <div class="functional-description">
+                        <h3>How It Works</h3>
+
+                        <p>
+                            A web application that allows users to connect, share posts, and interact with others in real time. 
+                            People can create content, like or edit posts, follow other users, and navigate through feeds with 
+                            pagination—making it easy to build and engage with an online community.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="section">
-                <h3>Architecture</h3>
-                
-                <ul>
-                    <li>Implemented an event-driven backend architecture integrating REST APIs, 
-                        asynchronous messaging, serverless functions, and relational databases.</li>
-                </ul>
+            <div class="row">
+                <div class="column-one">
+                    <img src="Images/email-reply.JPG">
+                </div>
+
+                <div class="column-two">
+                    <h2 id="single-page-email-client-system">Single-Page Email Client System - Full Stack Web Application</h2>
+
+                    <div class="technical-description">
+                        <h3>Technical Description</h3>
+
+                        <h4>Tech: Django · JavaScript · SQLite · HTML · CSS</h4>
+                        
+                        <ul>
+                            <li>Developed a single-page email client integrated with a Django backend API.</li>
+                            <li>Implemented asynchronous communication using Fetch and JSON for email operations.</li>
+                            <li>Built dynamic mailbox views (Inbox, Sent, Archive) without page reloads.</li>
+                        </ul>
+                    </div>
+
+                    <div class="functional-description">
+                        <h3>How It Works</h3>
+
+                        <p>
+                            A lightweight web application that simplifies email communication by bringing inbox, compose, sent, 
+                            and archived views into a single interface. Users can quickly write and reply to messages, confirm delivery, 
+                            and manage their correspondence efficiently—all while ensuring secure access through authentication.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <h2 id="projects-title">Projects</h2>
+            <div class="row">
+                <div class="column-one">
+                    <img src="Images/closed-listing.JPG">
+                </div>
+
+                <div class="column-two">
+                    <h2 id="online-auction-system">Online Auction System - Full Stack Web Application</h2>
+
+                    <div class="technical-description">
+                        <h3>Technical Description</h3>
+                        
+                        <h4>Tech: Python · Django · JavaScript · SQLite · HTML · CSS</h4>
+                        
+                        <ul>
+                            <li>Engineered an auction system using Django following the MVT architecture.</li>
+                            <li>Designed relational data models for listings, bids, comments, 
+                                categories, and user watchlists.</li>
+                            <li>Implemented authentication, auction listings, bidding with validation, 
+                                watchlists, and auction closing logic.</li>
+                        </ul>
+                    </div>
+
+                    <div class="functional-description">
+                        <h3>How It Works</h3>
+
+                        <p>
+                            A web application that enables users to participate in real-time auctions, place bids, 
+                            and track competition through transparent bidding and comment histories. 
+                            Buyers can view detailed product listings, follow auctions, and receive confirmation 
+                            when they win—making it easy to engage in secure and interactive online marketplaces.
+                        </p>
+                    </div>
+                </div>
+            </div> 
 
             <div class="row">
                 <div class="column-one">
                     <video controls preload="metadata">
                         <source src="Videos/Video Demo SGO.mp4" type="video/mp4">
-                        Tu navegador no soporta la reproducción de video.
+                        Your browser does not support video playback.
                     </video>
                 </div>
 
                 <div class="column-two">
-                    <div class="description">
-                        <h3 id="order-management-system">Order Management System - Full Stack Application</h3>
-                        
+                    <h2 id="order-management-system">Order Management System - Full Stack Mobile Application</h2>
+
+                    <div class="technical-description">
+                        <h3>Technical Description</h3>
+                
                         <h4>Tech: ASP.NET Core · Entity Framework Core · Flutter · Oracle Database</h4>
                         
                         <ul>
@@ -97,49 +251,17 @@
                                 enabling real-time integration with backend services.</li>
                         </ul>
                     </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="column-one">
-                    <img src="Images/auction-image.jpg">
-                </div>
+                    <div class="functional-description">
+                        <h3>How It Works</h3>
 
-                <div class="column-two">
-                    <div class="description"> 
-                        <h3 id="online-auction-platform">Online Auction Platform - Web Application</h3>
-                        
-                        <h4>Tech: Python · Django · JavaScript · SQLite · HTML · CSS</h4>
-                        
-                        <ul>
-                            <li>Engineered an auction platform using Django following the MVT architecture.</li>
-                            <li>Designed relational data models for listings, bids, comments, 
-                                categories, and user watchlists.</li>
-                            <li>Implemented authentication, auction listings, bidding with validation, 
-                                watchlists, and auction closing logic.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="column-one">
-                    <img src="Images/stock-management-image.jpg">
-                </div>
-
-                <div class="column-two">
-                    <div class="description"> 
-                        <h3 id="stock-management-system">Stock Management System - Web Application</h3>
-                        
-                        <h4>Tech: Node.js · Express.js · MongoDB · Mongoose · JavaScript · HTML · CSS</h4>
-                        
-                        <ul>
-                            <li>Created a stock management system using Node.js and Express.js with RESTful API architecture.</li>
-                            <li>Designed MongoDB data models using Mongoose and implemented full CRUD operations with 
-                                validation and structured API responses.</li>
-                            <li>Prevented race conditions during product creation by designing an atomic MongoDB counter, 
-                                ensuring data integrity across concurrent operations.</li>
-                        </ul>
+                        <p>
+                            A mobile and web solution that helps businesses streamline their daily operations. 
+                            Users can log in securely, manage sales, track invoices, register customer orders, 
+                            dispatch deliveries, and monitor inventory in real time. The system integrates 
+                            multiple workflows—sales, returns, suppliers, clients, and routes—all in one application, 
+                            making it easier to control and optimize the entire order lifecycle.
+                        </p>
                     </div>
                 </div>
             </div>

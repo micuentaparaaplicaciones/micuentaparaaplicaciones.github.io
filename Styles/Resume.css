@@ -69,6 +69,7 @@ h2 {
 
 .column-one div ul,
 .column-two div ul {
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     gap: 0.50rem;
